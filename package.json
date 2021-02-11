@@ -2,11 +2,13 @@
   "name": "nextjs-header",
   "version": "1.0.0",
   "description": "NextJs Header Component",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": ["dist","README.md"],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build-lib": "cross-env NODE_ENV=production babel src --out-dir dist"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,11 @@
   },
   "homepage": "https://github.com/IsJordanBraz/nextjs-header#readme",
   "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "cross-env": "^7.0.3",
     "next": "^10.0.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
