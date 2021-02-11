@@ -1,0 +1,29 @@
+{
+  "name": "nextjs-header",
+  "version": "1.0.0",
+  "description": "NextJs Header Component",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsJordanBraz/nextjs-header.git"
+  },
+  "keywords": [
+    "NextJs"
+  ],
+  "author": "Jordan Braz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsJordanBraz/nextjs-header/issues"
+  },
+  "homepage": "https://github.com/IsJordanBraz/nextjs-header#readme",
+  "devDependencies": {
+    "next": "^10.0.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
