@@ -1,10 +1,7 @@
 import Header from "../src";
 
 function HomePage() {
-  return <div>
-    Welcome to Next.js!
-    <Header />
-  </div>
+  return <Header username={"Jordan"} cart={10}/>
 }
 
 export default HomePage

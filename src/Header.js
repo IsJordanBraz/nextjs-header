@@ -1,14 +1,18 @@
-import Image from 'next/image'
-const Header = () => {
+import Style from './Header.module.css';
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import { cyan } from '@material-ui/core/colors';
+
+const Header = ({username = null, cart}) => {
   return (
-    <div>
-      <h3>Minha Library NextJs</h3>
-      <Image
-        src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
-        alt="Picture of the author"
-        width={500}
-        height={500}
-      />
+    <div className={Style.header}>
+      <div>
+        <a href="/">Meu Header</a>
+      </div>
+      <div className={Style.info}>
+        { username ? <span>Hello {username}</span> : null }
+        <ShoppingBasketIcon style={{ color: cyan[300] }}/>
+        <span>{cart}</span>
+      </div>
     </div>
   )
 }
